@@ -1,0 +1,256 @@
+
+/* Reset some default styles for better consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#contact {
+  text-align: left;
+  margin-top: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #C4DFDF;
+  color: #333;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.header{
+
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.center{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+#body {
+  float: left;
+  padding: 10px;
+  margin: 2px 3px;
+}
+
+.sidebar{
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-left: 0;
+}
+
+.dropbtn {
+  background-color: #1D267D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Section styles */
+section {
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+section h2 {
+  color: #333;
+  font-size: 32px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section ul {
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section li {
+  color: white;
+  background-color: #1D267D;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+section li:hover {
+  transform: scale(1.1);
+  border-color: #1D267D;
+  opacity: 0.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: black;
+  color: blue;
+  transform: scale(1.1);}
+
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  .sidebar{
+    margin-top: 10px;
+    width: 100%;
+    float: center;
+  }
+  .body{
+    margin: 0;
+    float: right;
+
+  }
+  body {
+    padding: 0px;
+  }
+
+  header {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    display: flex;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #contact {
+    margin-bottom: 0;
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
